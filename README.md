@@ -13,9 +13,9 @@
             "CustomerKey" : "demoDE",
             "Name" : "My Demo DE",
             "Fields" : [
-                { "Name" : "Field 1", "FieldType" : "Number", "IsPrimaryKey" : true, "IsRequired" : true },
-                { "Name" : "Field 2", "FieldType" : "Text", "MaxLength" : 50 },
-                { "Name" : "Field 3", "FieldType" : "Date", "Ordinal" : 2 },
+                { "Name" : "Email", "FieldType" : "EmailAddress", "IsPrimaryKey" : true, "IsRequired" : true, "MaxLength":100 },
+                { "Name" : "firstName", "FieldType" : "Text", "MaxLength" : 50 },
+                { "Name" : "LastName", "FieldType" : "Text", "MaxLength" : 50 }
             ]
         };
         var myDE = DataExtension.Add(deObj);
@@ -23,6 +23,5 @@
     } catch(err) {
         Write("(!) Data Extension was not created. Error message: " + err + "<br>")
     }
-    
 </script>
 ```
