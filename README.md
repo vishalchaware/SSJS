@@ -4,7 +4,9 @@
 - https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ssjs_serverSideJavaScript.html
 - Overview
 
-### Creat Data Extension
+### Data Extension
+
+#### Create Data Extension
 ```js server
 <script runat="server">
     Platform.Load("Core", "1");
@@ -22,6 +24,27 @@
         Write("(+) Data Extension was created successfully." + "<br>");
     } catch(err) {
         Write("(!) Data Extension was not created. Error message: " + err + "<br>")
+    }
+</script>
+```
+
+Add Field to a Data Extension
+
+```js server
+<script runat="server">
+    Platform.Load("Core", "1");
+    try {
+        var de = DataExtension.Init('demoDE');
+        var newField = {
+            Name : "Age",
+            CustomerKey : GUID(),
+            FieldType : "Number",
+            MaxLength: "2"
+        };
+        var status = de.Fields.Add(newField);
+        Write("Fields created successfully." + "<br>");
+    } catch(err) {
+        Write("(!) Something went wrong. Error message: " + err + "<br>")
     }
 </script>
 ```
