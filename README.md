@@ -36,9 +36,8 @@ Add Field to a Data Extension
         var de = DataExtension.Init('demoDE');
         var newField = {
             Name : "Age",
-            CustomerKey : GUID(),
-            FieldType : "Number",
-            MaxLength: "2"
+            CustomerKey : "demoDE",
+            FieldType : "Number"
         };
         var status = de.Fields.Add(newField);
         Write("Fields created successfully." + "<br>");
