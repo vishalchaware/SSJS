@@ -5,7 +5,7 @@
 - Overview
 
 ### Creat Data Extension
-```
+```js server
 <script runat="server">
     Platform.Load("Core", "1");
     try {
