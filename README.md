@@ -16,7 +16,7 @@ Create Data Extension
             "Name" : "My Demo DE",
             "Fields" : [
                 { "Name" : "Email", "FieldType" : "EmailAddress", "IsPrimaryKey" : true, "IsRequired" : true, "MaxLength":100 },
-                { "Name" : "firstName", "FieldType" : "Text", "MaxLength" : 50 },
+                { "Name" : "FirstName", "FieldType" : "Text", "MaxLength" : 50 },
                 { "Name" : "LastName", "FieldType" : "Text", "MaxLength" : 50 }
             ]
         };
@@ -61,5 +61,8 @@ Retrieve Data Extension
     }
 </script>
 ```
+
+Rows
+
 
 
