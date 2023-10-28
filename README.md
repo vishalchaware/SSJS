@@ -6,7 +6,7 @@
 
 ### Data Extension
 
-#### Create Data Extension
+Create Data Extension
 ```js server
 <script runat="server">
     Platform.Load("Core", "1");
@@ -29,7 +29,6 @@
 ```
 
 Add Field to a Data Extension
-
 ```js server
 <script runat="server">
     Platform.Load("Core", "1");
@@ -48,3 +47,19 @@ Add Field to a Data Extension
     }
 </script>
 ```
+
+Retrieve Data Extension
+```js server
+<script runat="server">
+    Platform.Load("Core", "1");
+    try {
+        var demoDE = DataExtension.Init("demoDE");
+        var fields = demoDE.Fields.Retrieve();
+        Write(Stringify(fields));
+    } catch(err) {
+        Write("(!) Something went wrong. Error message: " + err + "<br>")
+    }
+</script>
+```
+
+
