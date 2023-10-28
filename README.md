@@ -1,5 +1,9 @@
 # SSJS
 
+### Official Documentation
+- https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ssjs_serverSideJavaScript.html
+- Overview
+
 ### Creat Data Extension
 ```
 Platform.Load("Core", "1");
